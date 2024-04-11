@@ -1,0 +1,300 @@
+*{
+	 margin:0;
+	 padding:0;
+	 box-sizing:box-sizing;
+	 font-family:'spartan',sans-serif;
+	 
+}
+
+h1{
+	font-size:50px;
+	line-height:64px;
+	color:#222;
+}
+
+h2{
+	font-size:40px;
+  line-height:54px;
+  	color:#222;
+
+	
+}
+
+h3{
+	font-size:25px;
+	  line-height:44px;
+
+	
+}
+p{
+	font-size:15px;
+	line-height:34px;
+	color:#465b52;
+}
+
+body{
+	width:100%;
+}
+.logo{
+	position:relative;
+	top:10px;
+	height: 70px;
+}
+
+.section-p1{
+	padding:40px 80px;
+}
+/*header start*/
+#header{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px 70px;
+	background-color: #E3E6F3;
+	box-shadow:0 5px 15px rgba(0,0,0,0.09);
+	z-index:999;
+	position:sticky;
+	top:0;
+	left:0;
+	
+}
+
+#navbar li {
+	display:inline-block;
+	align-items:center;
+	justify-content:center;	
+	padding:0 20px;
+	position:relative;
+	
+	
+}
+
+#navbar li a{
+	text-decoration:none;
+	font-size:16px;
+	font-weight:600;
+	color:#1a1a1a;
+	transition:0.7s ease;
+	
+}
+
+
+#navbar li a:hover,
+#navbar li a.active{
+	color:#008000;
+}
+
+	
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+		content:"";
+		width:30%;
+		height:2px;
+		background:#008000;
+		position:absolute;
+		bottom:-4px;
+		left:20px;
+}
+
+
+/*main page*/
+
+#hero{
+	background-image:url("background2.png");
+	height:90vh;
+	width:80%;
+	background-size:cover;
+	background-position:;
+	padding:40px;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:center;
+}
+
+#hero h1{
+	padding:1px;
+	color:  #006666;
+}
+#hero h2{
+	padding:1px;
+}
+#hero h3{
+	padding:10px;
+}
+#hero button{
+	position:relative;
+	top:20px;
+	width:80px;
+	height:30px;
+	border:none;
+	left:80px;
+	font-weight:700;
+	border-radius:2px;
+	
+	
+	
+}
+
+#hero button:hover{
+	color:#FFFf;
+	background-color:#006666;
+}
+
+/*features icons*/
+#feature{
+	display:flex;
+	
+	
+}
+
+
+
+#fe-box img{
+	
+	width:120px;
+	text-align:center;
+	padding:25px 15px;
+	margin:30px;
+	border-style: solid;
+    border-color: black;
+	border-width:1px;
+	box-shadow:20px 20px 34px rgba(0,0,0,0.3);
+    height:auto;
+    border-radius:4px;
+	  
+}
+#feature  img:hover{
+	box-shadow:10px 10px 54px rgba(70,62,221,0.1);
+}
+
+
+#fe-box h6{
+	background-color:#006666;
+	width:130px;
+	height:auto;
+	border-style:solid;
+	border-color:transparent;
+	border-radius:4px;
+	border-width:1px;
+	text-align:center;
+	font-size:18px;
+	position:relative;
+	left:4px;
+	padding:5px;
+	margin:30px;
+	bottom:50px;	
+}
+	
+
+#fe-box:nth-child(2) h6{
+	background-color:red;
+}
+
+
+#fe-box:nth-child(3) h6{
+	background-color:#FDEADC;
+}
+
+
+#fe-box:nth-child(4) h6{
+	background-color:#0077b3;
+}
+
+/*products list*/
+
+#product1
+{
+	
+	text-align:center;
+}
+#product1 .pro-container{
+	display:flex;	
+	justify-content:space-between;
+	flex-wrap:wrap;
+	
+	
+}
+
+#product1 .pro{
+	
+	width:23%;
+	min-width:250px;
+	padding:10px 12px;
+	border:1px solid #cce7d0;
+	border-radius:25px;
+	cursor:pointer;
+	box-shadow:20px 25px 30px rgba(0,0,0,0.2);
+	margin:30px ;
+	transition:0.5s ease;
+	position:relative;
+}
+#product1 .pro:hover{
+box-shadow:20px 25px 30px rgba(0,0,0,0.06);}
+
+#product1 img{
+	width:250px;
+	border-radius:20px;
+}
+	
+#product1 .pro .des{
+text-align:start;
+padding:10px 0;
+
+}	
+
+#product1 .pro .des span{
+	color:#606063;
+	font-size:10px;
+}
+#product1 .pro .des h5{
+	
+	color:#606063;
+	font-size:25px;
+	padding-top:10px;
+	
+}
+
+#product1 .pro .des h4{
+	color:black;
+	font-size:23px;
+
+}
+	
+#product1 .star{
+		color:#FFD700;
+		font-size:20px;
+}
+
+#product1 .pro .cart{
+  
+            width:40px;
+			height:40px;
+			line-height:40px;
+			border-radius:40px;
+			background-color:#e8f6ea;
+			font-weight:500;
+			color:#088178;
+			border:1px solid #cce7d0;
+			position:absolute;
+			bottom:20px;
+			right:10px;
+			
+}
+.mention1{
+	padding: 40px 0;
+}
+
+#banner{
+	color:#FFFf;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    background-image: url("background111.jpg");
+}
+
+
